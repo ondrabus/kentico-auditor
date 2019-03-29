@@ -1,0 +1,196 @@
+﻿<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Auditor module for Kentico CMS</title>
+		
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-style-type" content="text/css" />
+		<meta http-equiv="content-script-type" content="text/javascript" />
+		<meta http-equiv="pragma" content="no-cache" />
+		
+		<link href="./favicon.ico" type="image/x-icon" rel="shortcut icon"/>
+		<link href="./favicon.ico" type="image/x-icon" rel="icon"/>
+		
+		<meta name="author" content="Kentico">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Auditor module for Kentico CMS tracks actions of users in administration interface and enables administrators to verify their activity." />
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway|Source+Sans+Pro" rel="stylesheet"> 
+		<link rel="stylesheet" href="./assets/css/default.css?v=20171231">
+
+
+		<meta name="og:type" content="website" />
+		<meta name="og:url" content="http://kentico.github.io/kentico-auditor" />
+		<meta name="og:title" content="Auditor module for Kentico CMS" />
+		<meta name="og:description" content="Auditor module for Kentico CMS tracks actions of users in administration interface and enables administrators to verify their activity." />
+		<meta name="og:image" content="./assets/img/logo.png" />
+	</head>
+	<body>
+		<header class="pure-g">
+			<div class="pure-u-1 pure-u-lg-1-2">
+				<h1><a href="/" title="Home"><i class="fa fa-eye fa-2x"></i><span>Auditor<br /><em>for Kentico CMS</em></span></a></h1>
+			</div>
+			<div class="pure-u-1 pure-u-lg-1-2">
+				<nav>
+					<ul>
+						<li><a href="#documentation">Documentation</a></li>
+						<li><a href="#get">Get it</a></li>
+						<li><a href="#development">Development</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<section id="introduction">
+			<h1><a id="introduction">Introduction</a></h1>
+			<p>Auditor module for Kentico CMS tracks actions of users in administration interface and enables super users to verify their activity.</p>
+			<ul class="with-icons">
+				<li><i class="fa fa-eye"></i> Verifying backend user activities</li>
+				<li><i class="fa fa-user-secret"></i> Tracking backend user activities</li>
+				<li><i class="fa fa-ban"></i> Investigating malfunctioning websites</li>
+				<li><i class="fa fa-bug"></i> Identifying root causes of issues</li>
+				<li><i class="fa fa-area-chart"></i> Monitoring website usage</li>
+			</ul>
+		</section>
+		
+		<section id="documentation">
+			<h1><a id="documentation">Documentation</a></h1>
+			<p><em>Auditor module for Kentico CMS</em> is based on events fired by <em>Kentico CMS</em> and is relying on <em>Scheduled tasks</em> feature. Running <em>Kentico CMS</em> instance and having supporting features configured is essential for full function of the module.</p>
+			<p><em>Auditor module</em> uses database bulk inserts to store logs in the database.</p>
+			
+			<section id="installation">
+				<h2><a id="installation">Installation</a></h2>
+				<p>In order to install <em>Auditor module</em> you need to have access to file system and <em>Kentico CMS</em> solution in Visual Studio. Add a local NuGet package repository and install <em>Auditor module for Kentico CMS</em> package. You need to perform following steps:</p>
+				<ul>
+					<li>Add NuGet package to your Kentico solution</li>
+					<li>Perform at least one request to your website - this completes the module installation</li>
+					<li>Add Auditor module license key in Module licenses application</li>
+					<li>Restart the website to initialize new license</li>
+				</ul>
+				<p>During the installation <em>Auditor module</em> will create database table for audit logs. By default <code>CMSConnectionString</code> will be used for database connection. If you wish to store logs in different location, add another connection string with name <code>AuditorConnectionString</code> prior to module's installation. Also note that <code>dbo</code> database schema is used.</p>
+			</section>
+			
+			<section id="configuration">
+				<h2><a id="configuration">Configuration</a></h2>
+				<p><em>Auditor module</em> needs to be configured and enabled before it starts auditing user actions. After installation of the module, open administration interface of <em>Kentico CMS</em> and log in as global administrator. Open <em>Settings</em> application and navigate to category <em>Auditor</em>&nbsp;&nbsp;<i class="fa fa-angle-right"></i> <em>Actions</em>.</p>
+				<p>
+					<figure>
+						<a href="./assets/img/logitem-detail-site.png" title="Click for detail"><img src="./assets/img/settings.png" alt="" class="pure-img" /></a>
+					</figure>
+				</p>
+				<p>After changing <em>Auditor module</em> settings you need to restart the application.</p>
+			</section>
+			
+			<section id="inspecting">
+				<h2><a id="inspecting">Inspecting logs</a></h2>
+				<p>Auditor module stores information about users and their actions on the website. This information is very contextual. Therefore in order to display these logs most efficiently, you will find Auditor module's pages in various sections of Kentico CMS administration interface. See below for list of all pages with logs overviews.</p>
+				<ul>
+					<li><strong>Auditor</strong> application<br /><em>Displays all logs collected in the whole instance (see section 2 in image below)</em></li>
+					<li><strong>Custom tables</strong> application <i class="fa fa-angle-right"></i> <strong>(selected custom table)</strong> <i class="fa fa-angle-right"></i> <strong>Auditor</strong> tab<br /><em>Displays all logs related to selected custom table.</em></li>
+					<li><strong>Pages</strong> application <i class="fa fa-angle-right"></i> <strong>(selected page)</strong> <i class="fa fa-angle-right"></i> <strong>Auditor</strong> tab<br /><em>Displays all logs related to selected page.</em></li>
+					<li><strong>Sites</strong> application <i class="fa fa-angle-right"></i> <strong>(selected site)</strong> <i class="fa fa-angle-right"></i> <strong>Auditor</strong> tab<br /><em>Displays all logs of actions that happened on selected site.</em></li>
+					<li><strong>Users</strong> application <i class="fa fa-angle-right"></i> <strong>(selected user)</strong> <i class="fa fa-angle-right"></i> <strong>Auditor</strong> tab<br /><em>Displays all logs related to selected user.</em></li>
+				</ul>
+				
+				<p>
+					<figure>
+						<a href="./assets/img/logitem-detail-site.png" title="Click for detail"><img src="./assets/img/inspecting-app.png" alt="" class="pure-img" /></a>
+					</figure>
+				</p>
+				
+				<p>Every overview table of Auditor pages enable additional filtering based on following data (see section 1 in image above):</p>
+				<ul>
+					<li>User<br /><em>Filters logs of actions done by selected user.</em></li>
+					<li>Site<br /><em>Filters logs of actions done on selected site.</em></li>
+					<li>Time<br /><em>Filters logs of actions done between selected dates.</em></li>
+					<li>Object name<br /><em>Filters logs of actions based on audited object's name</em></li>
+				</ul>
+				<p>After clicking on <i class="fa fa-eye"></i> icon on log item row <em>Auditor module</em> will display dialog box with details of particular log item. It includes detailed information about:</p>
+				<ul>
+					<li><strong>User</strong> who performed the action (marked section 1)</li>
+					<li><strong>Site</strong> on which the action was performed (marked section 1)</li>
+					<li><strong>Object</strong> type and identification (marked section 2)</li>
+					<li><strong>Changed values</strong> of manipulated object (marked section 3)</li>
+				</ul>
+				
+				<p>
+					<figure>
+						<a href="./assets/img/logitem-detail-site.png" title="Click for detail"><img src="./assets/img/logitem-detail-site.png" alt="" class="pure-img" /></a>
+					</figure>
+				</p>
+				
+				<p>All this data helps you diagnose any changes done to your website. You will find this information especially useful when investigating Settings keys changes, Staging tasks synchronization, Pages and their controls changes, etc.</p>
+				<p>For longer texts <em>Kentico Auditor</em> is able to display only differences between two updates which makes identifying changes a lot easier.</p>
+				
+				<p>
+					<figure>
+						<a href="./assets/img/logitem-detail-diff.png" title="Click for detail"><img src="./assets/img/logitem-detail-diff.png" alt="" class="pure-img" /></a>
+					</figure>
+				</p>
+				
+				<p>Actions on following objects in Kentico CMS are supported for logging:</p>
+				<ul>
+					<li>Application restart</li>
+					<li>Attachments</li>
+					<li>Custom tables</li>
+					<li>Documents</li>
+					<li>Media libraries and files</li>
+					<li>Page templates</li>
+					<li>Page types</li>
+					<li>Page types scopes</li>
+					<li>Roles</li>
+					<li>Settings keys</li>
+					<li>Sites</li>
+					<li>Site cultures</li>
+					<li>Staging tasks and synchronization</li>
+					<li>Users</li>
+					<li>Users roles</li>
+					<li>Users sites</li>
+					<li>Workflows</li>
+					<li>Workflow scopes</li>
+					<li>Workflow steps</li>
+				</ul>
+			</section>
+			
+			<section id="maintenance">
+				<h2><a id="maintenance">Maintenance</a></h2>
+				<p><em>Auditor module for Kentico</em> stores data of all performed actions that are enabled in Settings. Over time this can be a large volume of data and therefore is not recommended to store them in the same database indefinitely.</p>
+				<p>Best practice is to set up a process to migrate data from Auditor module's database table to another server (Archive) or to delete them based on your requirements for data preservation.</p>
+			</section>
+			
+			<section id="supported-versions">
+				<h2><a id="supported-versions">Supported versions of Kentico CMS</a></h2>
+				<p><em>Auditor module for Kentico</em> supports both MVC and Portal Engine development models.</p>
+				<p>Currently <em>Kentico CMS</em> version <code>12</code> is supported.</p>
+			</section>
+		</section>
+		
+		<section id="get">
+			<h1><a id="get">Get it</a></h1>
+			<p>To use Auditor on your website, install NuGet package Kentico-Auditor.</p>
+		</section> 
+
+		<section id="development">
+			<h1><a id="development">Development</a></h1>
+			<p>To enable local development of Auditor module follow these steps:</p>
+			<ul>
+				<li>make sure your developer instance of Kentico 12 does not have any hotfix applied - needs to be clean Kentico 12</li>
+				<li>import module package</li>
+				<li>download this repository to your solution root</li>
+				<li>open Kentico solution and add Auditor projects to your solution using Auditor.sln file</li>
+			</ul>
+		</section> 
+
+		<footer class="pure-g">
+			<div class="pure-u-1">
+				<p>&copy; 2019 Kentico software</p>
+			</div>
+		</footer>
+	</body>
+</html>

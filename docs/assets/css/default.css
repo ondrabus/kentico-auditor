@@ -1,0 +1,391 @@
+
+body
+{
+	background: rgb(245,245,245);
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+header
+{
+	background: #711166;
+}
+
+@media screen and (min-width: 64em)
+{
+	header
+	{
+		height: 150px;
+	}
+}
+
+footer
+{
+	height: 100px;
+	background: rgb(230,230,230);
+	text-align: center;
+}
+footer p
+{
+	font-size: 80%;
+	text-transform: uppercase;
+	color: #666;
+	line-height: 100px;
+}
+
+h1, h2
+{
+	font-family: 'Segoe UI Light', 'Raleway', sans-serif;
+	color: #333;
+}
+
+a
+{
+	color: #711166;
+}
+a:hover
+{
+	text-decoration: none;
+}
+h1 a, h2 a, p, ul
+{
+	color: #333;
+}
+
+em
+{
+	font-style: italic;
+}
+
+header > div
+{
+	height: 100%;
+}
+header h1
+{
+	display: flex;
+}
+header h1 a
+{
+	height: 125%;
+	color: #fff;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	align-items: center;
+	text-decoration: none;
+}
+header h1 > *
+{
+	margin: auto 5px;
+}
+header h1 span
+{
+	font-size: 150%;
+	padding-top: 34px;
+	margin: auto auto auto 10px;
+	line-height: 0.45em;
+	text-align: center;
+}
+header h1 em
+{
+	font-size: 30%;
+	text-transform: uppercase;
+}
+
+header nav
+{
+	display: flex;
+	height: 100%;
+	margin: auto;
+}
+header nav ul
+{
+	display: flex;
+	align-items: center;
+	margin: auto 0 auto auto;
+	flex-grow: 1;
+}
+header nav li
+{
+	flex-grow: 1;
+	flex-basis: 0;
+	text-align: center;
+	display: flex;
+}
+header nav li:first-child a
+{
+	border-left: 0;
+}
+header nav a
+{
+	color: #fff;
+	font-size: 100%;
+	font-family: 'Segoe UI Light', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0em;
+	text-decoration: none;
+	padding: 10px;
+	flex-grow: 1;
+	border-left: 1px solid #89237d;
+}
+header nav a:hover
+{
+	background: #58014e;
+}
+
+@media screen and (min-width: 48em)
+{
+	header h1 a
+	{
+		margin: auto auto auto 15%;
+	}
+	header nav
+	{
+		margin: auto 15% auto 15%;
+	}
+}
+
+@media screen and (min-width: 64em)
+{
+	header h1 a
+	{
+		margin: auto auto auto 30%;
+	}
+	header nav
+	{
+		margin: auto 30% auto auto;
+	}
+	header nav ul
+	{
+		flex-grow: 0;
+	}
+	header nav li
+	{
+		margin: auto;
+	}
+	header nav a
+	{
+		
+	}
+}
+
+
+
+section
+{
+	background: #fff;
+	margin: 15px 15px;
+	padding: 0px 10px 20px;
+}
+
+@media screen and (min-width: 48em){
+	section
+	{
+		margin: 30px 15%;
+		padding: 0px 20px 20px;
+	}
+}
+
+section section
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+section h1
+{
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	padding: 30px;
+	margin: auto -10px 20px;
+}
+@media screen and (min-width: 48em)
+{
+	section h1
+	{
+		margin: auto -20px 20px;
+	}
+}
+section h2
+{
+	font-size: 175%;
+	margin: 30px 0 0;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ddd;
+	display: inline-block;
+	text-align: left;
+}
+section p
+{
+	line-height: 1.35em;
+	padding: 10px 0;
+}
+
+section ul
+{
+	list-style-type: disc;
+	margin: -5px 15px 0 30px;
+}
+
+section li
+{
+	margin: 10px 0;
+	line-height: 1.5em;
+}
+
+section ul.with-icons
+{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	text-align: center;
+	margin: 0;
+}
+section ul.with-icons li
+{
+	font-family: 'Segoe UI Light', 'Raleway', sans-serif;
+	font-size: 150%;
+	margin: 20px auto;
+	flex-basis: 0;
+	flex-grow: 1;
+}
+section ul.with-icons i
+{
+	display: block;
+	margin: auto;
+	color: #711166;
+	font-size: 300%;
+	padding-bottom: 10px;
+}
+
+@media screen and (min-width: 64em){
+	section ul.with-icons
+	{
+		flex-direction: row;
+		margin: 20px 0;
+	}
+}
+
+section li em
+{
+	font-size: 85%;
+}
+
+#pricing section
+{
+	display: flex;
+	align-items: center;
+}
+#pricing section div
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px auto auto;
+	text-align: center;
+	font-family: 'Segoe UI Light', 'Raleway', sans-serif;
+	font-size: 150%;
+}
+#pricing h3
+{
+	font-size: 150%;
+	color: #711166;
+}
+#pricing h4
+{
+	text-align: center;
+	padding: 40px;
+	font-size: 80%;
+}
+#pricing h4 a
+{
+	padding: 10px 30px;
+	text-decoration: none;
+}
+
+@media screen and (min-width: 48em)
+{
+	#pricing section div
+	{
+		margin: 30px auto auto;
+	}
+	#pricing h4 a
+	{
+		padding: 10px 15px;
+	}
+}
+
+@media screen and (min-width: 64em)
+{
+	#pricing h4 a
+	{
+		padding: 10px 40px;
+	}
+}
+
+a.pure-button-primary,
+.pure-button-primary
+{
+	background: #7e2773;
+}
+a.pure-button-primary:hover
+{
+	background: #58014e;
+}
+
+#pricing .pure-u-1
+{
+	text-align: center;
+}
+#pricing img
+{
+	margin: auto;
+}
+
+#contact input[type=submit]
+{
+	margin-left: 5px;
+}
+
+address
+{
+	line-height: 1.25em;
+	color: #666;
+	margin-left: 20px;
+}
+address a
+{
+	color: #666;
+}
+
+
+code
+{
+	background: #eee;
+	padding: 1px 6px;
+	border-bottom: 1px solid #ccc;
+}
+
+.captcha
+{
+	margin-left: 5px;
+}
+
+.button-error {
+	padding-left: 5px;
+	line-height: 2em;
+	color: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.pure-button-success {
+
+	color: white;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+	background: rgb(28, 184, 65); /* this is a green */
+}
+#pricing h4 a.pure-button-success:hover
+{
+	background: #079927;
+}

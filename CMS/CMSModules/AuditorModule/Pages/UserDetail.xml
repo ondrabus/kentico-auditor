@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<grid>
+  <actions>
+    <action source="##ALL##" name="view" caption="$general.action$" fonticonclass="icon-eye" fonticonstyle="allow" externalsourcename="showDialog" />
+  </actions>
+  <columns>
+    <column source="DateCreated" caption="Date" wrap="false" />
+    <column source="UserGuid" caption="$general.user$" externalsourcename="UserGuid" wrap="false" />
+    <column source="##ALL##" caption="Action" externalsourcename="Action" wrap="false" />
+    <column source="##ALL##" caption="Detail" externalsourcename="ActionText" wrap="false" />
+    <column source="SiteGuid" caption="$general.site$" externalsourcename="SiteGuid" wrap="false" />
+    <column cssclass="filling-column" />
+  </columns>
+  <options>
+  </options>
+</grid>

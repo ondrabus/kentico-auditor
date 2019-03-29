@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Auditor.ABTestInfo" xml:space="preserve">
+    <value>AB test</value>
+  </data>
+  <data name="Auditor.Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Auditor.AttachmentInfo" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="Auditor.BizFormInfo" xml:space="preserve">
+    <value>Online form</value>
+  </data>
+  <data name="Auditor.CampaignInfo" xml:space="preserve">
+    <value>Campaign</value>
+  </data>
+  <data name="Auditor.ConversionInfo" xml:space="preserve">
+    <value>Conversion</value>
+  </data>
+  <data name="Auditor.CultureSiteInfo" xml:space="preserve">
+    <value>Culture-Site</value>
+  </data>
+  <data name="Auditor.CultureSiteInfoDeleteActionText" xml:space="preserve">
+    <value>Removed culture '{1}' from site '{2}'</value>
+  </data>
+  <data name="Auditor.CultureSiteInfoInsertActionText" xml:space="preserve">
+    <value>Added culture '{1}' to site '{2}'</value>
+  </data>
+  <data name="Auditor.Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Auditor.Document" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="Auditor.DocumentAliasInfo" xml:space="preserve">
+    <value>Page alias</value>
+  </data>
+  <data name="Auditor.DocumentCategoryInfo" xml:space="preserve">
+    <value>Page category</value>
+  </data>
+  <data name="Auditor.DocumentTagInfo" xml:space="preserve">
+    <value>Page tag</value>
+  </data>
+  <data name="Auditor.DocumentTypeInfo" xml:space="preserve">
+    <value>Page type</value>
+  </data>
+  <data name="Auditor.DocumentTypeScopeClassInfo" xml:space="preserve">
+    <value>Page type-Scope</value>
+  </data>
+  <data name="Auditor.DocumentTypeScopeInfo" xml:space="preserve">
+    <value>Page type scope</value>
+  </data>
+  <data name="Auditor.EmailTemplateInfo" xml:space="preserve">
+    <value>Email template</value>
+  </data>
+  <data name="Auditor.EventLogInfo" xml:space="preserve">
+    <value>Event log record</value>
+  </data>
+  <data name="Auditor.EventLogInfoInsertAction" xml:space="preserve">
+    <value>Application shutdown</value>
+  </data>
+  <data name="Auditor.EventLogInfoInsertActionText" xml:space="preserve">
+    <value>Application has ended.</value>
+  </data>
+  <data name="Auditor.FirstObjectGuid" xml:space="preserve">
+    <value>Left object GUID</value>
+  </data>
+  <data name="Auditor.FirstObjectName" xml:space="preserve">
+    <value>Left object name</value>
+  </data>
+  <data name="Auditor.FirstObjectType" xml:space="preserve">
+    <value>Left object type</value>
+  </data>
+  <data name="Auditor.IssueABVariantItem" xml:space="preserve">
+    <value>Email AB variant</value>
+  </data>
+  <data name="Auditor.IssueInfo" xml:space="preserve">
+    <value>Email issue</value>
+  </data>
+  <data name="Auditor.LogItemDetailTitle" xml:space="preserve">
+    <value>Log item detail</value>
+  </data>
+  <data name="Auditor.LogItemGuid" xml:space="preserve">
+    <value>Log item GUID</value>
+  </data>
+  <data name="Auditor.MediaFileInfo" xml:space="preserve">
+    <value>Media file</value>
+  </data>
+  <data name="Auditor.MediaLibraryInfo" xml:space="preserve">
+    <value>Media library</value>
+  </data>
+  <data name="Auditor.NewsletterInfo" xml:space="preserve">
+    <value>Newsletter</value>
+  </data>
+  <data name="Auditor.NoAdditionalData" xml:space="preserve">
+    <value>No additional data available.</value>
+  </data>
+  <data name="Auditor.NoSite" xml:space="preserve">
+    <value>(no site)</value>
+  </data>
+  <data name="Auditor.NoUser" xml:space="preserve">
+    <value>(no user)</value>
+  </data>
+  <data name="Auditor.ObjectGuid" xml:space="preserve">
+    <value>Object GUID</value>
+  </data>
+  <data name="Auditor.ObjectInfoDeleteAction" xml:space="preserve">
+    <value>{0} delete</value>
+  </data>
+  <data name="Auditor.ObjectInfoDeleteActionText" xml:space="preserve">
+    <value>Deleted {0} '{1}'</value>
+  </data>
+  <data name="Auditor.ObjectInfoInsertAction" xml:space="preserve">
+    <value>{0} create</value>
+  </data>
+  <data name="Auditor.ObjectInfoInsertActionText" xml:space="preserve">
+    <value>Inserted {0} '{1}'</value>
+  </data>
+  <data name="Auditor.ObjectInfoUpdateAction" xml:space="preserve">
+    <value>{0} update</value>
+  </data>
+  <data name="Auditor.ObjectInfoUpdateActionText" xml:space="preserve">
+    <value>Updated {0} '{1}'</value>
+  </data>
+  <data name="Auditor.ObjectName" xml:space="preserve">
+    <value>Object name</value>
+  </data>
+  <data name="Auditor.ObjectType" xml:space="preserve">
+    <value>Object type</value>
+  </data>
+  <data name="Auditor.OptionCategoryInfo" xml:space="preserve">
+    <value>Option category</value>
+  </data>
+  <data name="Auditor.OrderAddressInfo" xml:space="preserve">
+    <value>Order address</value>
+  </data>
+  <data name="Auditor.OrderInfo" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="Auditor.OrderStatusUserInfo" xml:space="preserve">
+    <value>Order status change</value>
+  </data>
+  <data name="Auditor.PageTemplateCategoryInfo" xml:space="preserve">
+    <value>Page template category</value>
+  </data>
+  <data name="Auditor.PageTemplateInfo" xml:space="preserve">
+    <value>Page template</value>
+  </data>
+  <data name="Auditor.PersonalizationInfo" xml:space="preserve">
+    <value>Personalization</value>
+  </data>
+  <data name="Auditor.PollAnswerInfo" xml:space="preserve">
+    <value>Poll answer</value>
+  </data>
+  <data name="Auditor.PollInfo" xml:space="preserve">
+    <value>Poll</value>
+  </data>
+  <data name="Auditor.PollSiteInfo" xml:space="preserve">
+    <value>Poll-Site</value>
+  </data>
+  <data name="Auditor.ResourceStringInfo" xml:space="preserve">
+    <value>Resource string</value>
+  </data>
+  <data name="Auditor.ResourceTranslatedInfo" xml:space="preserve">
+    <value>Resource translated</value>
+  </data>
+  <data name="Auditor.ResourceTranslationInfo" xml:space="preserve">
+    <value>Resource translation</value>
+  </data>
+  <data name="Auditor.RoleInfo" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="Auditor.SearchText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Auditor.SecondObjectGuid" xml:space="preserve">
+    <value>Right object GUID</value>
+  </data>
+  <data name="Auditor.SecondObjectName" xml:space="preserve">
+    <value>Right object name</value>
+  </data>
+  <data name="Auditor.SecondObjectType" xml:space="preserve">
+    <value>Right object type</value>
+  </data>
+  <data name="Auditor.SettingsKeyInfo" xml:space="preserve">
+    <value>Settings key</value>
+  </data>
+  <data name="Auditor.SettingsKeyInfoDeleteActionText" xml:space="preserve">
+    <value>Deleted {0} '{1}'</value>
+  </data>
+  <data name="Auditor.SettingsKeyInfoInsertActionText" xml:space="preserve">
+    <value>Set {0} '{1}' to value '{2}'</value>
+  </data>
+  <data name="Auditor.SettingsKeyInfoUpdateActionText" xml:space="preserve">
+    <value>Changed {0} '{1}' to value '{2}'</value>
+  </data>
+  <data name="Auditor.SiteInfo" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="Auditor.SiteInfoDeleted" xml:space="preserve">
+    <value>Site with GUID '{0}' has been deleted.</value>
+  </data>
+  <data name="Auditor.SKUAllowedOptionInfo" xml:space="preserve">
+    <value>SKU allowed option</value>
+  </data>
+  <data name="Auditor.SKUInfo" xml:space="preserve">
+    <value>SKU</value>
+  </data>
+  <data name="Auditor.SKUOptionCategoryInfo" xml:space="preserve">
+    <value>SKU category</value>
+  </data>
+  <data name="Auditor.UserInfo" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="Auditor.UserInfoDeleted" xml:space="preserve">
+    <value>User with GUID '{0}' has been deleted.</value>
+  </data>
+  <data name="Auditor.UserLoginAction" xml:space="preserve">
+    <value>User login</value>
+  </data>
+  <data name="Auditor.UserLoginActionText" xml:space="preserve">
+    <value>User '{1}' logged in</value>
+  </data>
+  <data name="Auditor.UserRoleInfo" xml:space="preserve">
+    <value>User-Role</value>
+  </data>
+  <data name="Auditor.UserRoleInfoDeleteActionText" xml:space="preserve">
+    <value>Removed user '{1}' from role '{2}'</value>
+  </data>
+  <data name="Auditor.UserRoleInfoInsertActionText" xml:space="preserve">
+    <value>Added user '{1}' to role '{2}'</value>
+  </data>
+  <data name="Auditor.UserRoleInfoUpdateActionText" xml:space="preserve">
+    <value>Updated assignment of user '{1}' to role '{2}'</value>
+  </data>
+  <data name="Auditor.UserSettingsInfo" xml:space="preserve">
+    <value>User settings</value>
+  </data>
+  <data name="Auditor.UserSiteInfo" xml:space="preserve">
+    <value>User-Site</value>
+  </data>
+  <data name="Auditor.UserSiteInfoDeleteActionText" xml:space="preserve">
+    <value>Removed user '{1}' from site '{2}'</value>
+  </data>
+  <data name="Auditor.UserSiteInfoInsertActionText" xml:space="preserve">
+    <value>Added user '{1}' to site '{2}'</value>
+  </data>
+  <data name="Auditor.UserSiteInfoUpdateActionText" xml:space="preserve">
+    <value>Updated user '{1}' to site '{2}' assignment</value>
+  </data>
+  <data name="Auditor.WorkflowHistoryInfo" xml:space="preserve">
+    <value>Page move between workflow steps</value>
+  </data>
+  <data name="Auditor.WorkflowHistoryInfoInsertAction" xml:space="preserve">
+    <value>Moved page between workflow steps</value>
+  </data>
+  <data name="Auditor.WorkflowHistoryInfoInsertActionText" xml:space="preserve">
+    <value>Moved page '{0}' from workflow step '{1}' to '{2}'</value>
+  </data>
+  <data name="Auditor.WorkflowInfo" xml:space="preserve">
+    <value>Workflow</value>
+  </data>
+  <data name="Auditor.WorkflowScopeInfo" xml:space="preserve">
+    <value>Workflow scope</value>
+  </data>
+  <data name="Auditor.WorkflowStepInfo" xml:space="preserve">
+    <value>Workflow step</value>
+  </data>
+  <data name="Auditor.DocumentTypeScopeClassInfoInsertActionText" xml:space="preserve">
+    <value>Added scope '{1}' to page type '{2}'</value>
+  </data>
+  <data name="Auditor.AttachmentHistoryInfo" xml:space="preserve">
+    <value>Attachment history</value>
+  </data>
+  <data name="Auditor.PageTemplateSiteInfo" xml:space="preserve">
+    <value>Page template-Site</value>
+  </data>
+  <data name="Auditor.PageTemplateSiteInfoDeleteActionText" xml:space="preserve">
+    <value>Removed page template '{1}' from site '{2}'</value>
+  </data>
+  <data name="Auditor.PageTemplateSiteInfoInsertActionText" xml:space="preserve">
+    <value>Added page template '{1}' to site '{2}'</value>
+  </data>
+  <data name="Auditor.PageTemplateSiteInfoUpdateActionText" xml:space="preserve">
+    <value>Updated page template '{1}' to site '{2}' assignment</value>
+  </data>
+  <data name="Auditor.StagingLogTaskAfterAction" xml:space="preserve">
+    <value>Staging task create finish (source)</value>
+  </data>
+  <data name="Auditor.StagingLogTaskAfterActionText" xml:space="preserve">
+    <value>Finished adding staging task '{1}'</value>
+  </data>
+  <data name="Auditor.StagingLogTaskBeforeAction" xml:space="preserve">
+    <value>Staging task create start (source)</value>
+  </data>
+  <data name="Auditor.StagingLogTaskBeforeActionText" xml:space="preserve">
+    <value>Started adding staging task '{1}'</value>
+  </data>
+  <data name="Auditor.StagingLogTaskFailureAction" xml:space="preserve">
+    <value>Staging task create fail (source)</value>
+  </data>
+  <data name="Auditor.StagingLogTaskFailureActionText" xml:space="preserve">
+    <value>Staging task '{1}' creation failed</value>
+  </data>
+  <data name="Auditor.StagingProcessTaskAfterAction" xml:space="preserve">
+    <value>Staging task processing finish (target)</value>
+  </data>
+  <data name="Auditor.StagingProcessTaskAfterActionText" xml:space="preserve">
+    <value>Staging task '{1}' processing finished</value>
+  </data>
+  <data name="Auditor.StagingProcessTaskBeforeAction" xml:space="preserve">
+    <value>Staging task processing start (target)</value>
+  </data>
+  <data name="Auditor.StagingProcessTaskBeforeActionText" xml:space="preserve">
+    <value>Staging task '{1}' processing started</value>
+  </data>
+  <data name="Auditor.StagingProcessTaskFailureAction" xml:space="preserve">
+    <value>Staging task processing fail (target)</value>
+  </data>
+  <data name="Auditor.StagingProcessTaskFailureActionText" xml:space="preserve">
+    <value>Staging task '{1}' processing failed</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeAfterAction" xml:space="preserve">
+    <value>Staging synchronization finish (source)</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeAfterActionText" xml:space="preserve">
+    <value>Staging synchronization finished</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeBeforeAction" xml:space="preserve">
+    <value>Staging synchronization start (source)</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeBeforeActionText" xml:space="preserve">
+    <value>Staging synchronization started</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeFailureAction" xml:space="preserve">
+    <value>Staging synchronization fail (source)</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeFailureActionText" xml:space="preserve">
+    <value>Staging synchronization failed</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTaskAfterAction" xml:space="preserve">
+    <value>Staging task sync finish (source)</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTaskAfterActionText" xml:space="preserve">
+    <value>Staging task '{1}' synchronization finished</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTaskBeforeAction" xml:space="preserve">
+    <value>Staging task sync start (source)</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTaskBeforeActionText" xml:space="preserve">
+    <value>Staging task '{1}' synchronization started</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTaskFailureAction" xml:space="preserve">
+    <value>Staging task sync fail (source)</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTaskFailureActionText" xml:space="preserve">
+    <value>Staging task '{1}' synchronization failed</value>
+  </data>
+  <data name="Auditor.StagingLogTask" xml:space="preserve">
+    <value>Staging task</value>
+  </data>
+  <data name="Auditor.StagingProcessTask" xml:space="preserve">
+    <value>Staging synchronization process</value>
+  </data>
+  <data name="Auditor.StagingSynchronizeTask" xml:space="preserve">
+    <value>Staging task synchronization</value>
+  </data>
+  <data name="Auditor.UserLogin" xml:space="preserve">
+    <value>User login</value>
+  </data>
+  <data name="Auditor.StagingSynchronize" xml:space="preserve">
+    <value>Staging synchronization</value>
+  </data>
+  <data name="Auditor.ClassSiteInfo" xml:space="preserve">
+    <value>Class-Site</value>
+  </data>
+  <data name="Auditor.DataClassInfo" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="Auditor.CustomTableItem" xml:space="preserve">
+    <value>Custom table item</value>
+  </data>
+</root>
