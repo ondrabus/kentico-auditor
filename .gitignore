@@ -47,6 +47,7 @@ CMS/config/*.config
 !Auditor.sln
 !development-import-package.zip
 !*.md
+!*.nupkg
 
 # do not track CMS folder except Auditor files
 CMS/*

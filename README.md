@@ -25,6 +25,7 @@ If you wish to participate on the implementation, follow these steps:
 	* `~\bin\Auditor.Mappings.dll`
 	* `~\bin\Auditor.UI.dll`
 	* `~\bin\Auditor.WebApi.dll`
+	* `~\bin\AutoMapper.dll`
 
 That's it, you're free to code. `.gitignore` will make sure only relevant files are tracked.
 
