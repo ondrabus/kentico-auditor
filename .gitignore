@@ -42,9 +42,11 @@ CMS/config/*.config
 !Auditor/
 !docs/
 !CMS/
+!.github/
 !.gitignore
 !Auditor.sln
 !development-import-package.zip
+!*.md
 
 # do not track CMS folder except Auditor files
 CMS/*
