@@ -19,6 +19,12 @@ If you wish to participate on the implementation, follow these steps:
 	* `git pull origin master`
 	* this should merge your Kentico instance with Auditor repository
 * open your website and import package `development-import-package.zip`
+* open Auditor module and add following libraries as `Additional libraries`:
+	* `~\bin\Auditor.dll`
+	* `~\bin\Auditor.Core.dll`
+	* `~\bin\Auditor.Mappings.dll`
+	* `~\bin\Auditor.UI.dll`
+	* `~\bin\Auditor.WebApi.dll`
 
 That's it, you're free to code. `.gitignore` will make sure only relevant files are tracked.
 
