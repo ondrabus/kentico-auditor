@@ -2,7 +2,7 @@
 
 Auditor module for Kentico CMS tracks actions of users in administration interface and enables super users to verify their activity.
 
-For more information see (Auditor website)[https://ondrabus.github.io/kentico-auditor]
+For more information see [Auditor website](https://ondrabus.github.io/kentico-auditor)
 
 # Installation
 If you want to use the provider in your Kentico EMS solution:
