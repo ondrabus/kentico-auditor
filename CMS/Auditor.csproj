@@ -596,19 +596,19 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Auditor.Core\Auditor.Core.csproj">
+    <ProjectReference Include="..\Auditor\Auditor.Core\Auditor.Core.csproj">
       <Project>{f414eaf7-0caa-4140-a366-bec2c509af11}</Project>
       <Name>Auditor.Core</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Auditor.Mappings\Auditor.Mappings.csproj">
+    <ProjectReference Include="..\Auditor\Auditor.Mappings\Auditor.Mappings.csproj">
       <Project>{857abe07-ecf9-4d34-93e6-472181e1d2c7}</Project>
       <Name>Auditor.Mappings</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Auditor.UI\Auditor.UI.csproj">
+    <ProjectReference Include="..\Auditor\Auditor.UI\Auditor.UI.csproj">
       <Project>{1dacecee-e2ac-4e47-bb07-39f91c0e7eb5}</Project>
       <Name>Auditor.UI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Auditor.WebApi\Auditor.WebApi.csproj">
+    <ProjectReference Include="..\Auditor\Auditor.WebApi\Auditor.WebApi.csproj">
       <Project>{fdff3d1d-b845-4db7-b018-70b830a45662}</Project>
       <Name>Auditor.WebApi</Name>
     </ProjectReference>
